@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="Hanna" id="1">
+        <createTable tableName="productos">
+            <column autoIncrement="true" name="id_producto" type="SERIAL">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="productos_pkey"/>
+            </column>
+            <column name="nombre" type="VARCHAR(45)"/>
+            <column name="id_categoria" type="INTEGER"/>
+            <column name="codigo_barras" type="VARCHAR(150)"/>
+            <column name="precio_venta" type="DECIMAL(16,2)"/>
+            <column name="cantidad_stock" type="INTEGER"/>
+            <column name="estado" type="BOOLEAN"/>
+        </createTable>
+    </changeSet>
+   
+</databaseChangeLog>

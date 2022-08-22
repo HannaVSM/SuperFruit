@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Producto</string>
+    <string name="hint_producto_name">Nombre</string>
+</resources>
